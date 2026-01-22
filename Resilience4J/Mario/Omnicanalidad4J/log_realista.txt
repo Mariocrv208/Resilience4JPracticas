@@ -1,0 +1,27 @@
+INFORME DE ESTRÉS REALISTA (5 SEGUNDOS)
+[2026-01-22 16:24:15.372] SISTEMA      | Iniciando ráfaga realista (Sin Sleep)
+[2026-01-22 16:24:15.397] RETRY        | Intento #1
+[2026-01-22 16:24:16.409] RETRY        | Intento #2
+[2026-01-22 16:24:18.429] ESTADO_CB    | Cambio: CLOSED -> OPEN
+[2026-01-22 16:24:18.435] ERROR_CAPT   | Fallo de conexión simulado
+[2026-01-22 16:24:18.445] RETRY        | Intento #1
+[2026-01-22 16:24:19.449] RETRY        | Intento #2
+[2026-01-22 16:24:21.461] ERROR_CAPT   | CircuitBreaker 'demoCB' is OPEN and does not permit further calls
+[2026-01-22 16:24:21.461] RETRY        | Intento #1
+[2026-01-22 16:24:22.475] RETRY        | Intento #2
+[2026-01-22 16:24:24.477] ERROR_CAPT   | CircuitBreaker 'demoCB' is OPEN and does not permit further calls
+[2026-01-22 16:24:24.478] RETRY        | Intento #1
+[2026-01-22 16:24:25.491] RETRY        | Intento #2
+[2026-01-22 16:24:27.505] ERROR_CAPT   | CircuitBreaker 'demoCB' is OPEN and does not permit further calls
+[2026-01-22 16:24:27.508] RETRY        | Intento #1
+[2026-01-22 16:24:28.516] ESTADO_CB    | Cambio: OPEN -> HALF_OPEN
+[2026-01-22 16:24:28.525] RETRY        | Intento #2
+[2026-01-22 16:24:30.541] ESTADO_CB    | Cambio: HALF_OPEN -> OPEN
+[2026-01-22 16:24:30.541] ERROR_CAPT   | Fallo de conexión simulado
+[2026-01-22 16:24:30.542] RETRY        | Intento #1
+[2026-01-22 16:24:31.556] RETRY        | Intento #2
+[2026-01-22 16:24:33.556] ERROR_CAPT   | CircuitBreaker 'demoCB' is OPEN and does not permit further calls
+[2026-01-22 16:24:33.561] RETRY        | Intento #1
+[2026-01-22 16:24:34.564] RETRY        | Intento #2
+[2026-01-22 16:24:36.574] ERROR_CAPT   | CircuitBreaker 'demoCB' is OPEN and does not permit further calls
+[2026-01-22 16:24:36.576] SISTEMA      | Fin de ráfaga. Generando reporte...
