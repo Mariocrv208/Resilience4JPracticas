@@ -1,0 +1,43 @@
+=================================================================================
+INFORME DETALLADO DE EVENTOS DE RESILIENCIA
+=================================================================================
+[2026-01-22 16:57:34.996] ACCIÓN: CAMBIO DE ESTADO     | De OPEN a HALF_OPEN
+[2026-01-22 16:57:34.997] ACCIÓN: RETRY (Backoff Activo) | Intento número: 1
+[2026-01-22 16:57:36.001] ACCIÓN: CAMBIO DE ESTADO     | De HALF_OPEN a OPEN
+[2026-01-22 16:57:36.001] ACCIÓN: RETRY (Backoff Activo) | Intento número: 2
+[2026-01-22 16:57:38.002] ACCIÓN: FALLO                | CircuitBreaker 'demoCB' is OPEN and does not permit further calls
+[2026-01-22 16:57:38.207] ACCIÓN: EXITO                | EJECUCIÓN EXITOSA (Directa)
+[2026-01-22 16:57:38.410] ACCIÓN: RETRY (Backoff Activo) | Intento número: 1
+[2026-01-22 16:57:39.412] ACCIÓN: RETRY (Backoff Activo) | Intento número: 2
+[2026-01-22 16:57:41.414] ACCIÓN: FALLO                | CircuitBreaker 'demoCB' is OPEN and does not permit further calls
+[2026-01-22 16:57:41.618] ACCIÓN: RETRY (Backoff Activo) | Intento número: 1
+[2026-01-22 16:57:42.620] ACCIÓN: RETRY (Backoff Activo) | Intento número: 2
+[2026-01-22 16:57:44.622] ACCIÓN: FALLO                | CircuitBreaker 'demoCB' is OPEN and does not permit further calls
+[2026-01-22 16:57:44.827] ACCIÓN: RETRY (Backoff Activo) | Intento número: 1
+[2026-01-22 16:57:45.827] ACCIÓN: RETRY (Backoff Activo) | Intento número: 2
+[2026-01-22 16:57:47.828] ACCIÓN: CAMBIO DE ESTADO     | De OPEN a HALF_OPEN
+[2026-01-22 16:57:47.829] ACCIÓN: FALLO                | Fallo de conexión simulado
+[2026-01-22 16:57:48.032] ACCIÓN: EXITO                | EJECUCIÓN EXITOSA (Directa)
+[2026-01-22 16:57:48.236] ACCIÓN: EXITO                | EJECUCIÓN EXITOSA (Directa)
+[2026-01-22 16:57:48.439] ACCIÓN: CAMBIO DE ESTADO     | De HALF_OPEN a OPEN
+[2026-01-22 16:57:48.439] ACCIÓN: RETRY (Backoff Activo) | Intento número: 1
+[2026-01-22 16:57:49.441] ACCIÓN: RETRY (Backoff Activo) | Intento número: 2
+[2026-01-22 16:57:51.442] ACCIÓN: FALLO                | CircuitBreaker 'demoCB' is OPEN and does not permit further calls
+[2026-01-22 16:57:51.647] ACCIÓN: RETRY (Backoff Activo) | Intento número: 1
+[2026-01-22 16:57:52.648] ACCIÓN: RETRY (Backoff Activo) | Intento número: 2
+[2026-01-22 16:57:54.649] ACCIÓN: FALLO                | CircuitBreaker 'demoCB' is OPEN and does not permit further calls
+[2026-01-22 16:57:54.855] ACCIÓN: RETRY (Backoff Activo) | Intento número: 1
+[2026-01-22 16:57:55.856] ACCIÓN: RETRY (Backoff Activo) | Intento número: 2
+[2026-01-22 16:57:57.857] ACCIÓN: FALLO                | CircuitBreaker 'demoCB' is OPEN and does not permit further calls
+[2026-01-22 16:57:58.061] ACCIÓN: EXITO                | EJECUCIÓN EXITOSA (Directa)
+[2026-01-22 16:57:58.267] ACCIÓN: RETRY (Backoff Activo) | Intento número: 1
+[2026-01-22 16:57:59.268] ACCIÓN: CAMBIO DE ESTADO     | De OPEN a HALF_OPEN
+[2026-01-22 16:57:59.269] ACCIÓN: RETRY (Backoff Activo) | Intento número: 2
+[2026-01-22 16:58:01.271] ACCIÓN: CAMBIO DE ESTADO     | De HALF_OPEN a OPEN
+[2026-01-22 16:58:01.271] ACCIÓN: FALLO                | Fallo de conexión simulado
+[2026-01-22 16:58:01.475] ACCIÓN: RETRY (Backoff Activo) | Intento número: 1
+[2026-01-22 16:58:02.476] ACCIÓN: RETRY (Backoff Activo) | Intento número: 2
+[2026-01-22 16:58:04.477] ACCIÓN: FALLO                | CircuitBreaker 'demoCB' is OPEN and does not permit further calls
+[2026-01-22 16:58:04.681] ACCIÓN: RETRY (Backoff Activo) | Intento número: 1
+[2026-01-22 16:58:05.684] ACCIÓN: RETRY (Backoff Activo) | Intento número: 2
+[2026-01-22 16:58:07.685] ACCIÓN: FALLO                | CircuitBreaker 'demoCB' is OPEN and does not permit further calls

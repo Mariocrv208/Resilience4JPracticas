@@ -1,0 +1,50 @@
+server:
+  port: 3000
+  error:
+    include-stacktrace: never
+    include-message: always
+
+spring:
+  application:
+    name: Omnicanalidad4J
+
+logging:
+  level:
+    root: INFO
+    com.Omnicanalidad: DEBUG
+    io.github.resilience4j: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+  health:
+    circuitbreakers:
+      enabled: true
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      demoCB:
+        registerHealthIndicator: true
+        slidingWindowSize: 6
+        minimumNumberOfCalls: 3
+        failureRateThreshold: 30
+        waitDurationInOpenState: 10s
+        permittedNumberOfCallsInHalfOpenState: 2
+        recordExceptions:
+          - java.lang.RuntimeException
+
+  retry:
+    instances:
+      demoRetry:
+        maxAttempts: 3
+        waitDuration: 1s
+        enableExponentialBackoff: true # Activación de Backoff
+        exponentialBackoffMultiplier: 2 # El tiempo se duplica en cada fallo (1s, 2s, 4s)
+        retryExceptions:
+          - java.lang.RuntimeException
